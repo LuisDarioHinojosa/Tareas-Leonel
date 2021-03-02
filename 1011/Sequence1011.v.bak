@@ -1,0 +1,40 @@
+module Sequence1011(
+    input clk,
+    input rst,
+    input x,
+    output z
+
+);
+
+
+parameter A = 2'b00;
+parameter B = 2'b01;
+parameter C = 2'b10;
+parameter D = 2'b11;
+
+
+
+reg [2:0] STATE, NEXT;
+
+always @(posedge clk)
+	begin
+		if(rst) STATE <= ResetTimerA;
+		else STATE <= NEXT;
+	end
+
+//     WaitV : NEXT = (sv == 0 & zv == 0) ? WaitV : (sv == 0 & zv == 1) ? PaceV : ResetTimerA;
+
+always@(*)
+    begin
+        case(STATE)
+            A: NEXT = (x == 0) ? A : B;
+            B: NEXT = (x == 0) ? C : B;
+            C: NEXT = (x == 0) ? A : D;
+            D: NEXT = (X == 0) ? C : B;
+        endcase
+    end
+
+assign z = (STATE == D);
+
+
+endmodule

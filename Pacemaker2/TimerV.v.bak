@@ -1,0 +1,24 @@
+// UP TO 44 CLICKS
+module TimerV(
+    input clk,
+    input rst,
+    input en,
+    output tcv
+);
+
+reg [5:0] = count;
+wire [5:0] = nextCount;
+
+assign nextCount = count-1;
+
+
+always @(posedge clk) 
+    begin
+        if(rst) count <= 5'b11101;
+        else if(en) <= nextCount;
+    end
+
+assign tcv =  (count == 5'b11101);
+
+
+endmodule

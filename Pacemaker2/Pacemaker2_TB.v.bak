@@ -1,0 +1,41 @@
+module Pacemaker2_TB;
+
+	reg clk;
+	reg rst;
+	reg sa;
+	reg sv;
+
+    wire pa,pv;
+	Pacemaker2 uut (
+	.clk(clk), 
+	.rst(rst), 
+        .sa(sa),
+        .sv(sv),
+        .pa(pa),
+        .pv(pv)
+	);
+
+	initial begin
+		// Initialize Inputs
+		clk = 0;
+		rst = 1;
+		sa = 0;
+		sv = 0;
+
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		rst = 0;  // turning off the reset
+		
+		#200;
+		#45;
+    	#200;
+		#45; 
+
+	end
+	
+	initial begin
+		forever #5 clk = ~clk; 
+	end
+      
+endmodule

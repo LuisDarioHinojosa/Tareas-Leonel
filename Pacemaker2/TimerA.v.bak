@@ -1,0 +1,24 @@
+// UP TO 30 CLICKS
+module TimerA(
+    input clk,
+    input rst,
+    input en,
+    output tca
+);
+
+reg [6:0] = count;
+wire [6:0] = nextCount;
+
+assign nextCount = count-1;
+
+
+always @(posedge clk) 
+    begin
+        if(rst) count <= 6'b101100;
+        else if(en) <= nextCount;
+    end
+
+assign tcv =  (count == 6'b101100);
+
+
+endmodule

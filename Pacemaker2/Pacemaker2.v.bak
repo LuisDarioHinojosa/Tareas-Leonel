@@ -1,0 +1,18 @@
+module Pacemaker2(
+    input rst,
+    input clk,
+   input sa,
+   input sv
+);
+
+
+wire za,zv,ta,tv;
+
+Controller pacemaker(.clk(clk),.rst(rst),.sa(sa),.sv(sa),.za(za),.zv(zv),.ta(ta).tv(tv));
+
+TimerA timera(.clk(clk),.rst(ta|rst),.en(),.tca(za));
+
+timerV timerv(.clk(clk),.rst(tv|rst),.en(),.tcv(zv));
+
+
+endmodule

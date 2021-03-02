@@ -1,0 +1,38 @@
+C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/TimerV.v {2 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/TimerV.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TimerV
+** Warning: C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/TimerV.v(21): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	TimerV
+
+} {} {}} C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/Pacemaker2.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/Pacemaker2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Pacemaker2
+
+Top level modules:
+	Pacemaker2
+
+} {} {}} C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/Controller.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/Controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/Pacemaker2_TB.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/Pacemaker2_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Pacemaker2_TB
+
+Top level modules:
+	Pacemaker2_TB
+
+} {} {}} C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/TimerA.v {2 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/TimerA.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TimerA
+** Warning: C:/intelFPGA_lite/18.1/Leonel/Pacemaker2/TimerA.v(17): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	TimerA
+
+} {} {}}
